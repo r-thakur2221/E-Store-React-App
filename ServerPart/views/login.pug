@@ -1,0 +1,18 @@
+html
+    head
+        title=title
+        link(rel="stylesheet", href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css")
+    body.container
+        h1=title
+        p=msg
+        form(name='loginform',method='POST').form-group
+            label(for='Username') Username
+            input(type="text",name='username',placeholder='Username').form-control
+            label(for='Password') Password
+            input(type="password",name='password',placeholder='password').form-control
+            br
+            button(type="submit").btn.btn-primary Login
+        p Don't have an account? 
+            a(href="/auth/register") Register Here
+        p
+            a(href="/auth/forget_password") forget password

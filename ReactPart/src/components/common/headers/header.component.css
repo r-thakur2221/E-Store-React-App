@@ -1,0 +1,18 @@
+.Navbar {
+  height: 80px;
+  background-color: blueviolet;
+}
+
+.Navbar_list {
+  list-style-type: none;
+}
+.Navbar_item a {
+  float: left;
+  padding: 40px;
+  color: rgb(207, 187, 187);
+  text-decoration: none;
+}
+
+.Navbar_item :hover {
+  color: blue;
+}
